@@ -1,7 +1,7 @@
 var ffmpeg = require('ffmpeg');
 
 try {
-  var process = new ffmpeg('./SampleVideo_1280x720_2mb.mp4');
+  var process = new ffmpeg('./sample_test_video.mp4');
   process.then(function (video) {
     video.addCommand('-ss', '00:00:06')
     video.addCommand('-vframes', '1')
